@@ -11,6 +11,10 @@ import HTML5Icon from "../assets/icons/html5.svg";
 const Home = () => {
   const navigation = [
     {
+      to: "about-me",
+      name: "About Me",
+    },
+    {
       to: "projects",
       name: "Projects",
     },
