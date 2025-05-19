@@ -6,7 +6,7 @@ const AboutMe: React.FC = () => {
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            👋 About Me
+            About Me
           </h2>
           <h3 className="text-xl text-green-700 font-semibold mb-6">
             Developer. Farmer. Systems Thinker.
@@ -73,7 +73,7 @@ const AboutMe: React.FC = () => {
         <div className="w-full h-px bg-zinc-800 my-6" />
 
           <h3 className="text-2xl font-semibold mt-10 mb-4 text-zinc-100">
-            💻 Now I’m Back in Tech — with Better Frameworks (and calloused hands)
+            Now I’m Back in Tech — with Better Frameworks (and calloused hands)
           </h3>
           <p className="mb-6 text-lg text-zinc-400">
             I bring a unique edge to software:
@@ -96,7 +96,7 @@ const AboutMe: React.FC = () => {
           <div className="w-full h-px bg-zinc-800 my-6" />
 
           <h3 className="text-2xl font-semibold mt-10 mb-4 text-zinc-100">
-            🔍 What I’m Focused On
+            What I’m Focused On
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-400">
             <li>Backend & Distributed Systems</li>
@@ -108,7 +108,7 @@ const AboutMe: React.FC = () => {
           <div className="w-full h-px bg-zinc-800 my-6" />
 
           <h3 className="text-2xl font-semibold mt-10 mb-4 text-zinc-100">
-            ⚡ When I’m Not Coding...
+             When I’m Not Coding...
           </h3>
           <p className="mb-6 text-lg text-zinc-400">
             I’m training for endurance events, walking my German Shepherd{" "}
