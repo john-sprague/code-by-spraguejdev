@@ -131,7 +131,7 @@ const AboutMe: React.FC = () => {
 
         <div className="text-center">
             <p className="text-lg text-zinc-400 mb-6">
-            Now I’m bringing those lessons — and that mindset — back into software engineering with even stronger vision, discipline, and purpose.
+            Now I’m bringing new lessons — and a mission focused mindset — back into software engineering with even stronger vision, discipline, and purpose.
             </p>
             <Link
                 to="/contact"
