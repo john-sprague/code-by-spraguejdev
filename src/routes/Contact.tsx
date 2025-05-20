@@ -1,5 +1,4 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import { Link } from "react-router-dom";
 import TitleSection from "../components/TitleSection";
 interface FormData {
   name: string;

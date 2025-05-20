@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
 
