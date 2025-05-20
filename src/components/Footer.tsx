@@ -19,6 +19,12 @@ const Footer: React.FC = () => {
           {/* Navigation Links */}
           <div className="flex space-x-8 justify-center sm:justify-start">
             <Link
+              to="/skills"
+              className="text-lg text-zinc-400 hover:text-white transition duration-300"
+            >
+              Skills 
+            </Link>
+            <Link
               to="/about-me"
               className="text-lg text-zinc-400 hover:text-white transition duration-300"
             >
