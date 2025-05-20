@@ -18,8 +18,17 @@ export default {
         title: "title 3s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
+        "scale-up": "scaleUp 300ms ease-in-out",
       },
       keyframes: {
+        "scaleUp": {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "100%": {
+            transform: "scale(1.1)", // Scale to 110% for hover effect
+          },
+        },
         "fade-in": {
           "0%": {
             opacity: "0%",
