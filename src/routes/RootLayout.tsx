@@ -10,7 +10,7 @@ const RootLayout = () => {
 
   return (
     <>
-       {!shouldHideMenu && <MainNavigation />}
+      {!shouldHideMenu && <MainNavigation />}
       <Outlet />
     </>
   );

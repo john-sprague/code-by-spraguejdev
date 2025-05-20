@@ -16,23 +16,53 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <><Layout><Home /></Layout></>,
+        element: (
+          <>
+            <Layout>
+              <Home />
+            </Layout>
+          </>
+        ),
       },
       {
-        path: "/skills", 
-        element: <><Layout><Skills /></Layout></>,
+        path: "/skills",
+        element: (
+          <>
+            <Layout>
+              <Skills />
+            </Layout>
+          </>
+        ),
       },
       {
         path: "/about-me",
-        element: <><Layout><AboutMe /></Layout></>,
+        element: (
+          <>
+            <Layout>
+              <AboutMe />
+            </Layout>
+          </>
+        ),
       },
       {
         path: "/projects",
-        element: <><Layout><Projects /></Layout></>,
+        element: (
+          <>
+            <Layout>
+              <Projects />
+            </Layout>
+          </>
+        ),
       },
       {
         path: "/contact",
-        element: <><Layout><Contact /></Layout></>,
+        element: (
+          <>
+            <Layout>
+              <Contact />
+            </Layout>
+          </>
+        ),
       },
     ],
   },

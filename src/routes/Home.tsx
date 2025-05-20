@@ -52,9 +52,14 @@ const Home = () => {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-md text-zinc-500 ">
-         As a Senior Software Engineer with a proven track record at IBM, I specialize in full-stack development, UX design, and optimizing system performance to deliver high-impact, scalable solutions. 
-          <br /><br/>
-          Recognized with an Outstanding Technical Achievement Award (OTAA) and promoted three times in just three years, I excel at transforming complex challenges into user-centric, business-driving applications. 
+          As a Senior Software Engineer with a proven track record at IBM, I
+          specialize in full-stack development, UX design, and optimizing system
+          performance to deliver high-impact, scalable solutions.
+          <br />
+          <br />
+          Recognized with an Outstanding Technical Achievement Award (OTAA) and
+          promoted three times in just three years, I excel at transforming
+          complex challenges into user-centric, business-driving applications.
         </h2>
         <div className="flex items-center justify-center gap-2 mt-5">
           <JavaScriptIcon />

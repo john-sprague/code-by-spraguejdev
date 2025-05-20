@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ScrollToTopButton from "./ScrollToTopButton"; 
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-zinc-900 text-zinc-100 py-12 animate-fade-in relative">
       <ScrollToTopButton />
-      
+
       <div className="px-6 mx-auto max-w-7xl">
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
           {/* Logo or Brand Name */}
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               to="/skills"
               className="text-lg text-zinc-400 hover:text-white transition duration-300"
             >
-              Skills 
+              Skills
             </Link>
             <Link
               to="/about-me"

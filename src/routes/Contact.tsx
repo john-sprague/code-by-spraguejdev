@@ -13,7 +13,9 @@ const Contact: React.FC = () => {
     message: "",
   });
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
@@ -29,11 +31,11 @@ const Contact: React.FC = () => {
   return (
     <div className="relative pb-16">
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-        <TitleSection 
-              title='Contact Me'
-              subtitle='Have questions? Feel free to reach out, and I’ll get back to you as
-            soon as possible. '
-             children={undefined}     
+        <TitleSection
+          title="Contact Me"
+          subtitle="Have questions? Feel free to reach out, and I’ll get back to you as
+            soon as possible. "
+          children={undefined}
         />
         <form
           onSubmit={handleSubmit}
