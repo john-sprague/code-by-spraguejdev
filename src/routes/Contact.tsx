@@ -102,16 +102,7 @@ const Contact: React.FC = () => {
           </button>
         </form>
 
-        <div className="w-full h-px bg-zinc-800 my-16" />
-
-        <div className="text-center">
-          <Link
-            to="/projects"
-            className="px-4 py-1 text-sm font-semibold text-purple-600 bg-transparent border border-purple-200 rounded-full hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-          >
-            Back to Projects
-          </Link>
-        </div>
+        <div className="w-full h-px bg-zinc-300/50 my-6 animate-fade-in" />
       </div>
     </div>
   );
