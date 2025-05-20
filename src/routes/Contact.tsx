@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
         />
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 max-w-2xl mx-auto mt-12"
+          className="space-y-6 max-w-2xl mx-auto mt-12 animate-fade-in"
         >
           <div>
             <label

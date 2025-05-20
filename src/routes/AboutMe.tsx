@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
       <TitleSection 
               title='About Me'
               subtitle='Developer. Builder. Systems Thinker'
-             children={undefined}     
+             children={undefined} 
         />
       {/* Section 1 - About Me Intro */}
       <Section

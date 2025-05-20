@@ -10,7 +10,7 @@ const Projects = () => {
               subtitle='Some of the projects are from work and some are on my own time.'
               children={undefined}     
         	/>
-				<div className='grid grid-cols-2 gap 8 mx-auto lg:grid-cols-2'>
+				<div className='grid grid-cols-2 gap 8 mx-auto lg:grid-cols-2 animate-fade-in'>
 					<Card >
 						<Link to='projects/sample'>
 							<div className="text-center space-y-2 sm:text-left">

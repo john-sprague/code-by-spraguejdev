@@ -11,7 +11,7 @@ const Section: React.FC<SectionProps> = ({ title, subtitle, children, isDarkMode
   return (
     <>
     <div
-      className={`relative py-12 w-full ${
+      className={`relative py-12 w-full animate-fade-in ${
         isDarkMode ? "text-zinc-100" : "bg-zinc-800 text-zinc-200"
       }`}
     >
@@ -30,7 +30,7 @@ const Section: React.FC<SectionProps> = ({ title, subtitle, children, isDarkMode
         <div className="max-w-2xl mx-auto lg:mx-0 " >{children}</div>
       </div>
     </div>
-    <div className="w-full h-px bg-zinc-800 my-6" />
+    <div className="w-full h-px bg-zinc-600 my-6 animate-fade-in"/>
 
     </>
   );
