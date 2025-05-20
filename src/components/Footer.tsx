@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           {/* Navigation Links */}
           <div className="flex space-x-8 justify-center sm:justify-start">
             <Link
-              to="/about"
+              to="/about-me"
               className="text-lg text-zinc-400 hover:text-white transition duration-300"
             >
               About
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-zinc-700 pt-6 text-center">
+        <div className="mt-8 border-t border-zinc-300/50 pt-6 text-center">
           {/* Social Media Links */}
           <div className="flex justify-center space-x-6 mb-4">
             <a
