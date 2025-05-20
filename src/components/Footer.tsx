@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               to="/about-me"
               className="text-lg text-zinc-400 hover:text-white transition duration-300"
             >
-              About
+              About Me
             </Link>
             <Link
               to="/projects"
