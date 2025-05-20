@@ -119,26 +119,6 @@ const AboutMe: React.FC = () => {
           </a>.
         </p>
       </Section>
-
-      {/* Section 8 - Call to Action */}
-      <div className="w-full h-px bg-zinc-800 my-16" />
-      <div className="text-center">
-        <p className="text-lg text-zinc-400 mb-6">
-          Now I’m bringing new lessons — and a mission-focused mindset — back into software engineering with even stronger vision, discipline, and purpose.
-        </p>
-        <Link
-          to="/contact"
-          className="px-4 py-2 text-white bg-purple-600 rounded-full hover:bg-purple-700 mr-6"
-        >
-          Let’s Connect
-        </Link>
-        <Link
-          to="/projects"
-          className="px-4 py-2 text-white bg-purple-600 rounded-full hover:bg-purple-700"
-        >
-          Back to Projects
-        </Link>
-      </div>
       </div>
     </div>
   );
