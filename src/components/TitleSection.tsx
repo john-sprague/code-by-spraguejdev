@@ -12,7 +12,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
   children,
 }) => {
   return (
-    <>
+    <section>
       <div className="max-w-2xl mx-auto lg:mx-0 ">
         <div className="hidden w-1/2 h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <br />
@@ -29,7 +29,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
         <div className="text-lg text-zinc-400 space-y-2">{children}</div>
       </div>
       <div className="w-full h-px bg-zinc-300/50 my-6 animate-fade-in" />
-    </>
+    </section>
   );
 };
 
