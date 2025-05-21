@@ -28,7 +28,7 @@ const AboutMe: React.FC = () => {
 
         {/* Section 2 - Career Journey */}
         <Section
-          title="⚙️ From Cloud Architecture to Crop Rotation"
+          title="From Cloud Architecture to Crop Rotation"
           subtitle="My career journey has brought me from engineering scalable systems to optimizing agricultural workflows."
           isDarkMode={false}
         >

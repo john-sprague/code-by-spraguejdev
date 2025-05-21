@@ -16,10 +16,10 @@ const TitleSection: React.FC<TitleSectionProps> = ({
       <div className="max-w-2xl mx-auto lg:mx-0 ">
         <div className="hidden w-1/2 h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <br />
-        <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl animate-title">
+        <h2 className="text-3xl xl:text-6xl font-bold tracking-tight text-zinc-100 sm:text-4xl animate-title">
           {title}
         </h2>
-        <p className="text-lg pt-4 text-zinc-400 space-y-2  animate-title ">
+        <p className="text-lg pt-4 text-zinc-200 space-y-2  animate-title ">
           {subtitle}
         </p>
         <br />

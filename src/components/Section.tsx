@@ -16,8 +16,8 @@ const Section: React.FC<SectionProps> = ({
   return (
     <>
       <div
-        className={`relative py-12 w-full animate-fade-in max-w-3xl ${
-          isDarkMode ? "text-zinc-100" : "bg-zinc-800/75 text-zinc-100 ml-auto"
+        className={`relative py-12 w-full animate-fade-in max-w-3xl text-zinc-100 ${
+          isDarkMode ? "" : "bg-zinc-800/75  ml-auto"
         }`}
       >
         <div
@@ -27,7 +27,7 @@ const Section: React.FC<SectionProps> = ({
         >
           {/* Section Title */}
           <div className="max-w-2xl mx-auto lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl xl:text-5xl l:text-5xl med:text-4xl font-bold tracking-tight sm:text-4xl text-zinc-100">
               {title}
             </h2>
             <p className="mt-4 text-lg">{subtitle}</p>
