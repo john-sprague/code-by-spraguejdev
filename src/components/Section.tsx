@@ -3,11 +3,13 @@ import React from "react";
 interface SectionProps {
   title: string;
   subtitle: string;
-  children: React.ReactNode;
-  isDarkMode?: boolean;
+  verticalLineText: string;
+  children?: React.ReactNode;
+  isDarkMode?: Boolean;
 }
 
 const Section: React.FC<SectionProps> = ({
+  verticalLineText,
   title,
   subtitle,
   children,
@@ -15,33 +17,42 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <>
-      <section>
+    
+      <section
+        className={`${
+          isDarkMode ? `` : `bg-zinc-900`
+        } min-h-[60vh] w-full text-zinc-100 flex items-center py-12 md:px-8 xl:px-20 animate-fade-in`}
+      >
         <div
-          className={`relative py-12 w-full animate-fade-in max-w-3xl text-zinc-100 ${
-            isDarkMode ? "" : "bg-zinc-800/75  ml-auto"
-          }`}
+          className={`flex container flex-col md:flex-row ${
+            isDarkMode ? `items-start` : `md:flex-row-reverse items-end`
+          } gap-16 w-full`}
         >
-          <div
-            className={`px-6 mx-auto space-y-8 max-w-7xl ${
-              isDarkMode
-                ? "flex flex-col items-start"
-                : "flex flex-col items-end"
-            }`}
-          >
-            {/* Section Title */}
-            <div className="max-w-2xl mx-auto lg:mx-0">
-              <h2 className="text-3xl xl:text-5xl l:text-5xl med:text-4xl font-bold tracking-tight sm:text-4xl text-zinc-100">
+          {/* Left Side */}
+          <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
+            <div className={`${isDarkMode ? `sm:pl-10 xs:pl-10 ` : `sm:pl-14 xs:pl-14`} text-white p-6 pr-20 lg:pr-20`}>
+              {/* Vertical Text */}
+              <div className="absolute -left-4 top-16 sm:left-16 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
+                <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
+                <p>{verticalLineText}</p>
+              </div>
+
+              {/* Main Heading */}
+              <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold ">
                 {title}
               </h2>
               <p className="mt-4 text-lg">{subtitle}</p>
             </div>
 
-            {/* Section Content */}
-            <div className="max-w-2xl mx-auto lg:mx-0 ">{children}</div>
+            {/* Render Supporting Paragraph */}
+            {children && children}
           </div>
+
+          {/* Right Side */}
+          {/* <div className="w-full h-px bg-zinc-600 my-6 animate-fade-in" /> */}
         </div>
-        <div className="w-full h-px bg-zinc-600 my-6 animate-fade-in" />
       </section>
+      <div className="w-full h-px bg-zinc-600 my-6 animate-fade-in" />
     </>
   );
 };

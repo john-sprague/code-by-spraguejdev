@@ -14,6 +14,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="The Journey, Not The Destination"
           subtitle="Now building with clarity, purpose, and calloused hands"
+          verticalLineText="The Journey"
           isDarkMode={true}
         >
           <p className="text-lg text-zinc-400 space-y-2">
@@ -30,6 +31,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="From Cloud Architecture to Crop Rotation"
           subtitle="My career journey has brought me from engineering scalable systems to optimizing agricultural workflows."
+          verticalLineText="Tech Transition"
           isDarkMode={false}
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-400">
@@ -60,6 +62,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="Skills & Systems Developed"
           subtitle="I’ve built repeatable systems that blend engineering with resourceful problem solving."
+          verticalLineText="New Skills"
           isDarkMode={true}
         >
           <ul className="list-disc pl-5 text-lg text-zinc-400 space-y-2">
@@ -94,6 +97,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="Why It Matters in Tech"
           subtitle="The skills I developed in farming and operations directly translate to software engineering."
+          verticalLineText="Transferable Skills"
           isDarkMode={false}
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-400 ">
@@ -127,6 +131,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="Now I’m Back in Tech — with Better Frameworks (and dirty boots)"
           subtitle="I bring a unique edge to software development with systems thinking, real-world grit, and empathy."
+          verticalLineText="The Comeback"
           isDarkMode={true}
         >
           <ul className="list-disc list-inside space-y-2 text-lg text-zinc-400">
@@ -153,6 +158,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="What I’m Focused On"
           subtitle="Currently, I’m tackling challenges that push the limits of full stack engineering and product scalability."
+          verticalLineText="Mission Focused"
           isDarkMode={false}
         >
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-400">
@@ -167,6 +173,7 @@ const AboutMe: React.FC = () => {
         <Section
           title="When I’m Not Coding..."
           subtitle="I stay active, train for endurance events, and love spending time with my German Shepherd, Stormy."
+          verticalLineText="Community"
           isDarkMode={true}
         >
           <p className="mb-6 text-lg text-zinc-400">
