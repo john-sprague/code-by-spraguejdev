@@ -8,7 +8,7 @@ const MainNavigation = () => {
           <li>
             <Link
               to="/"
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-md duration-500 text-zinc-200 hover:text-zinc-50"
             >
               Home
             </Link>
@@ -16,7 +16,7 @@ const MainNavigation = () => {
           <li>
             <Link
               to="/skills"
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-md duration-500 text-zinc-200 hover:text-zinc-50"
             >
               Skills
             </Link>
@@ -24,7 +24,7 @@ const MainNavigation = () => {
           <li>
             <Link
               to="/about-me"
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-md duration-500 text-zinc-200 hover:text-zinc-50"
             >
               About Me
             </Link>
@@ -32,7 +32,7 @@ const MainNavigation = () => {
           <li>
             <Link
               to="/projects"
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-md duration-500 text-zinc-200 hover:text-zinc-50"
             >
               Projects
             </Link>
@@ -40,7 +40,7 @@ const MainNavigation = () => {
           <li>
             <Link
               to="/contact"
-              className="text-md duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-md duration-500 text-zinc-200 hover:text-zinc-50"
             >
               Contact
             </Link>

@@ -25,7 +25,7 @@ const Home = () => {
             {navigation.map((item) => (
               <Link
                 key={item.to}
-                className="text-md text-zinc-500 hover:text-zinc-300 transition duration-500"
+                className="text-md text-zinc-200 hover:text-zinc-50 transition duration-500"
                 to={item.to}
               >
                 {item.name}

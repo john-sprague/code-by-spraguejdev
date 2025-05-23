@@ -20,25 +20,25 @@ const Footer: React.FC = () => {
           <div className="flex space-x-8 justify-center sm:justify-start">
             <Link
               to="/skills"
-              className="text-lg text-zinc-400 hover:text-white transition duration-300"
+              className="text-lg text-zinc-200 hover:text-zinc-50 transition duration-300"
             >
               Skills
             </Link>
             <Link
               to="/about-me"
-              className="text-lg text-zinc-400 hover:text-white transition duration-300"
+              className="text-lg text-zinc-200 hover:text-zinc-50 transition duration-300"
             >
               About Me
             </Link>
             <Link
               to="/projects"
-              className="text-lg text-zinc-400 hover:text-white transition duration-300"
+              className="text-lg text-zinc-200 hover:text-zinc-50 transition duration-300"
             >
               Projects
             </Link>
             <Link
               to="/contact"
-              className="text-lg text-zinc-400 hover:text-white transition duration-300"
+              className="text-lg text-zinc-200 hover:text-zinc-50 transition duration-300"
             >
               Contact
             </Link>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
               href="https://linkedin.com/in/spraguejdev"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white"
+              className="text-zinc-400 hover:text-zinc-50"
             >
               LinkedIn
             </a>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               href="https://github.com/spraguejdev"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white"
+              className="text-zinc-400 hover:text-zinc-50"
             >
               GitHub #1 (Older)
             </a>
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
               href="https://github.com/john-sprague"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white"
+              className="text-zinc-400 hover:text-zinc-50"
             >
               GitHub #2 (Newer)
             </a>
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
               href="https://twitter.com/johnsprague"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 hover:text-white"
+              className="text-zinc-400 hover:text-zinc-50"
             >
               Twitter
             </a>

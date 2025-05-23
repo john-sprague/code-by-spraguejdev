@@ -30,9 +30,9 @@ const Section: React.FC<SectionProps> = ({
         >
           {/* Left Side */}
           <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
-            <div className={`${isDarkMode ? `sm:pl-10 xs:pl-10 ` : `sm:pl-14 xs:pl-14`} text-white p-6 pr-20 lg:pr-20`}>
+            <div className={` text-zinc-100 p-6 pr-5 pl-12 lg:pr-20`}>
               {/* Vertical Text */}
-              <div className="absolute -left-4 top-16 sm:left-16 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
+              <div className="absolute -left-4  sm:left-16 sm:top-24 md:-left-12 xl:-left-16 top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
                 <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
                 <p>{verticalLineText}</p>
               </div>

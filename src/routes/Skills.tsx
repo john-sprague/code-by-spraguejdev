@@ -45,19 +45,20 @@ const Skills: React.FC = () => {
 
               <p className="p-3 space-y-2 text-zinc-400 text-lg leading-relaxed">
                 These are the tools and technologies that I use daily to develop
-                web applications. With a strong foundation in frontend, I focus
-                on delivering clean, maintainable code and intuitive user
+                web applications. With a strong foundation in the JavaScript.js ecosystem, I focus
+                on delivering clean, scalable, maintainable code and intuitive user
                 experiences.
               </p>
 
-              <div className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
+              {/* TODO: Add Tools/Skills Logic */}
+              {/* <div className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
                 <button className="rounded-lg px-4 py-2 bg-orange-500 text-white transition-all duration-300 hover:bg-orange-600">
                   Skills
                 </button>
                 <button className="rounded-lg px-4 py-2 bg-transparent text-zinc-400 transition-all duration-300 hover:text-white">
                   Tools
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side (Static Icons Grid) */}
@@ -96,7 +97,6 @@ const Skills: React.FC = () => {
                 <IconWithLabel name="Node.js">
                   <NodeJsIcon />
                 </IconWithLabel>
-
 
                 <IconWithLabel name="ExpressJS">
                   <ExpressJsIcon />

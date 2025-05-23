@@ -10,7 +10,28 @@ const AboutMe: React.FC = () => {
           subtitle="Developer. Builder. Systems Thinker"
           children={undefined}
         />
-        {/* Section 1 - About Me Intro */}
+        <Section
+          title="When I’m Not Coding..."
+          subtitle="I stay active outdoors, withing the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
+          verticalLineText="Community"
+          isDarkMode={false}
+        >
+          <p className="mb-6 text-lg text-zinc-400">
+            I'm building a community of like minded individuals who take responsibility seriously. I gravitate toward people who are actively growing and 
+            not chasing shortcuts. They read, train, reflect, build. Whether it's in their career, relationships, self-growth, they're playing the long game. 
+            <br/><br/>
+            I value consistency, shared effort, and mutual growth. 
+            <br/><br/>
+            Personally, you can find me training for endurance events, walking my German Shepherd{" "}
+            <span className="font-semibold">Stormy</span> 🐾, or sharing
+            reflections and lessons in my storytelling series:{" "}
+            <a href="#" className="text-green-700 underline font-semibold">
+              Roots & Reboots
+            </a>
+            .
+          </p>
+        </Section>
+
         <Section
           title="The Journey, Not The Destination"
           subtitle="Now building with clarity, purpose, and calloused hands"
@@ -27,7 +48,6 @@ const AboutMe: React.FC = () => {
           </p>
         </Section>
 
-        {/* Section 2 - Career Journey */}
         <Section
           title="From Cloud Architecture to Crop Rotation"
           subtitle="My career journey has brought me from engineering scalable systems to optimizing agricultural workflows."
@@ -58,7 +78,6 @@ const AboutMe: React.FC = () => {
           </ul>
         </Section>
 
-        {/* Section 3 - Skills & Systems Developed */}
         <Section
           title="Skills & Systems Developed"
           subtitle="I’ve built repeatable systems that blend engineering with resourceful problem solving."
@@ -93,11 +112,10 @@ const AboutMe: React.FC = () => {
           </ul>
         </Section>
 
-        {/* Section 4 - Why It Matters in Tech */}
         <Section
           title="Why It Matters in Tech"
           subtitle="The skills I developed in farming and operations directly translate to software engineering."
-          verticalLineText="Transferable Skills"
+          verticalLineText="Transferable"
           isDarkMode={false}
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-400 ">
@@ -114,20 +132,13 @@ const AboutMe: React.FC = () => {
             <li>Built trust through consistency, transparency, and value.</li>
             <li>Customer focus rooted in empathy and service.</li>
             <li>
-              {" "}
               Developed a strong sense of grit, humility, and determination,
               driven by the belief that the most valuable projects are those
               that require persistence and resilience.
             </li>
-            <li>
-              Embracing challenges head-on and continuously learning from
-              failures has been crucial in creating solutions that stand the
-              test of time.
-            </li>
           </ul>
         </Section>
 
-        {/* Section 5 - Now Back in Tech */}
         <Section
           title="Now I’m Back in Tech — with Better Frameworks (and dirty boots)"
           subtitle="I bring a unique edge to software development with systems thinking, real-world grit, and empathy."
@@ -154,7 +165,6 @@ const AboutMe: React.FC = () => {
           </blockquote>
         </Section>
 
-        {/* Section 6 - What I'm Focused On */}
         <Section
           title="What I’m Focused On"
           subtitle="Currently, I’m tackling challenges that push the limits of full stack engineering and product scalability."
@@ -162,29 +172,12 @@ const AboutMe: React.FC = () => {
           isDarkMode={false}
         >
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-400">
+            <li>Javascript, Typescript, Node.js</li>
             <li>Backend & Distributed Systems</li>
             <li>Purpose-driven Product Engineering</li>
             <li>Developer Experience & Team Collaboration</li>
             <li>Scalability, performance, and sustainability</li>
           </ul>
-        </Section>
-
-        {/* Section 7 - When I’m Not Coding */}
-        <Section
-          title="When I’m Not Coding..."
-          subtitle="I stay active, train for endurance events, and love spending time with my German Shepherd, Stormy."
-          verticalLineText="Community"
-          isDarkMode={true}
-        >
-          <p className="mb-6 text-lg text-zinc-400">
-            I’m training for endurance events, walking my German Shepherd{" "}
-            <span className="font-semibold">Stormy</span> 🐾, or sharing
-            reflections and lessons in my storytelling series:{" "}
-            <a href="#" className="text-green-700 underline font-semibold">
-              Roots & Reboots
-            </a>
-            .
-          </p>
         </Section>
       </div>
     </div>
