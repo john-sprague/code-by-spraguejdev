@@ -9,7 +9,7 @@ import PythonIcon from "../assets/icons/python.svg";
 import CssIcon from "../assets/icons/css.svg";
 import HTML5Icon from "../assets/icons/html5.svg";
 import Button from "../components/Button";
-import Avatar from "../components/Avatar";
+import Avatar from "../components/Avatar.tsx";
 import profilePic from "../../public/images/my_avatar_image.jpg";
 
 const Home: React.FC = () => {
