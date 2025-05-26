@@ -38,7 +38,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ghost: "hover:bg-muted/10 hover:text-muted-foreground focus:ring-muted",
       link: "text-blue-600 underline-offset-4 hover:underline focus:ring-blue-600",
       gradient:
-        "w-full bg-gradient-to-r from-white via-orange-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105",
+        "w-full bg-gradient-to-r from-white via-orange-600 hover:from-orange-700 hover:to-orange-700 text-white font-semibold py-3 transition-all duration-200 transform hover:scale-105",
     };
 
     const sizeStyles = {
