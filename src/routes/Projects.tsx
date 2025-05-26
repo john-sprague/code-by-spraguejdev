@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
     {
       title: "Portfolio",
       description: "My portfolio showcases my journey as a full-stack software engineer with a passion for building innovative, scalable solutions across diverse industries. It highlights my expertise in developing impactful web applications, leveraging modern technologies, and creating user-centric designs.",
-      imageSrc: "/images/bay.avif",
+      imageSrc: "/images/portfolio-project-image.png",
       date: "June 2022",
       status: "completed",
       technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "ESLint", "React Router", "clsx", "Lucide-React", "Vite Plugin SVGR"],
