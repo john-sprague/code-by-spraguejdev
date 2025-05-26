@@ -4,7 +4,7 @@ import TitleSection from "../components/TitleSection";
 const AboutMe: React.FC = () => {
   return (
     <div className="relative pb-16">
-      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 ">
         <TitleSection
           title="About Me"
           subtitle="Developer. Builder. Systems Thinker"

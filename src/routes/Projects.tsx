@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="relative pb-16">
-      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 min-h-screen">
+      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 min-h-screen">
         <TitleSection
           title="Projects"
           subtitle="Some of the projects are from work and some are on my own time."
