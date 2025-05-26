@@ -1,5 +1,7 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import TitleSection from "../components/TitleSection";
+import Button from "../components/Button";
+
 interface FormData {
   name: string;
   email: string;
@@ -94,13 +96,15 @@ const Contact: React.FC = () => {
               className="w-full mt-1 px-4 py-2 border border-zinc-700 bg-zinc-800 rounded-lg text-white focus:ring-2 focus:ring-purple-600"
             />
           </div>
-
-          <button
+          <Button variant="gradient" size="lg">
+            Reach Out 
+          </Button>
+          {/* <button
             type="submit"
             className="w-full py-2 text-sm font-semibold text-white bg-purple-600 border border-purple-200 rounded-full hover:bg-purple-700 focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
           >
             Send Message
-          </button>
+          </button> */}
         </form>
 
         <div className="w-full h-px bg-zinc-300/50 my-6 animate-fade-in" />
