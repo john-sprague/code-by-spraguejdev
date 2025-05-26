@@ -7,6 +7,7 @@ import Contact from "./routes/Contact";
 import RootLayout from "./routes/RootLayout";
 import ErrorPage from "./routes/ErrorPage";
 import Layout from "./components/Layout";
+import StarField from './components/StarField'; // StarField component
 
 const router = createBrowserRouter([
   {
@@ -69,7 +70,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="relative min-h-screen">
+    <StarField />
+    <RouterProvider router={router} />
+  </div>
+  )
 }
+
 
 export default App;
