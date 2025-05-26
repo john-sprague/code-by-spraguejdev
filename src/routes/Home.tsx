@@ -21,14 +21,14 @@ const Home: React.FC = () => {
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 
         <div className="text-center space-y-0">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-400 to-blue-600 animate-title sm:text-6xl md:text-9xl">
+          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-blue-600 animate-title sm:text-6xl md:text-9xl md:min-h-36">
             John Sprague
           </h1>
-          <h2 className="text-2xl text-zinc-300 animate-fade-in">
+          <h2 className="text-2xl text-zinc-300 mt-4 animate-fade-in">
             Full-Stack Engineer and Builder of Useful Things
           </h2>
 
-          <div className="flex justify-center pt-12">
+          <div className="flex justify-center pt-8 animate-fade-in">
             <Avatar
               src={profilePic}
               alt="John Sprague"
