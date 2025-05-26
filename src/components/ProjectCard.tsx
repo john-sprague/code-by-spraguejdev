@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
         <div className="absolute top-3 left-3">
-          <Badge variant="info" size="lg" className="mr-2">
+          <Badge variant="success" size="lg" className="mr-2">
             {status.replace("-", " ")}
           </Badge>
         </div>
