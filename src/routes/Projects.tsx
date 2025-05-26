@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
           children={""}
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-center md:justify-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 justify-center md:justify-start animate-fade-in">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
