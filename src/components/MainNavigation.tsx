@@ -7,10 +7,10 @@ const MainNavigation = () => {
       <nav className="my-16 animate-bounce">
         <ul className="flex items-center justify-center gap-5">
           {NavItems.map((navItem) => (
-            <li>
+            <li className="hover:scale-105">
               <Link
                 to={navItem.pagePath}
-                className="text-md duration-500 text-zinc-200 hover:text-zinc-50 text-lg"
+                className="text-md duration-500 text-zinc-200 hover:text-zinc-50 text-lg hover:scale-110"
               >
                 {navItem.pageName}
               </Link>

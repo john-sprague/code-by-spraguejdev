@@ -16,12 +16,11 @@ const Footer: React.FC = () => {
             </Link>
           </div>
 
-
           <div className="flex space-x-8 justify-center sm:justify-start">
             {NavItems.map(navItem => (
               <Link
               to={navItem.pagePath}
-              className="text-lg text-zinc-200 hover:text-zinc-50 transition duration-300"
+              className="text-lg text-zinc-200 hover:text-zinc-50 hover:scale-110 transition duration-100"
             >
               {navItem.pageName}
             </Link>
@@ -30,6 +29,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-8 border-t border-zinc-300/50 pt-6 text-center">
+        {/* TODO: Keep things DRY */}
           <div className="flex justify-center space-x-6 mb-4">
             <a
               href="https://linkedin.com/in/spraguejdev"

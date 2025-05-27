@@ -46,21 +46,21 @@ const Home: React.FC = () => {
           <p className="text-lg text-zinc-300 leading-relaxed">
             {"     "}Hey, I’m John — full-stack engineer, systems thinker, and lifelong
             builder-in-progress. I design clean code, scalable systems, and
-            tools that actually help people — with a mindset rooted in clarity,
+            tools that actually help people, along with a mindset rooted in clarity,
             growth, and continuous learning.
             <br />
             <br />
             My journey started in college, building websites for local
-            businesses while studying Information Systems — where I fell in love
-            with creative problem solving and purposeful tech. Now, as a Senior
+            businesses while studying Information Systems, where I fell in love
+            with creative problem solving and making a difference in the world through tech. Now, as a Senior
             Software Engineer with a proven track record at IBM, I focus on{" "}
             <strong>
-              full-stack development, UX design, and system performance.
+              full-stack development, UX design, Scalability, and system performance.
             </strong>
             <br />
             <br />
             Rebooted with purpose, I bring a sharpened perspective, a bias for
-            momentum, and a deep respect for systems that serve real people.
+            momentum, and a deep respect for systems that change peoples lives.
             <br/><br/>
             
             </p>
