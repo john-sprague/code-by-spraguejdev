@@ -28,16 +28,13 @@ const Skills: React.FC = () => {
         />
         <section className="min-h-screen w-full bg-zinc-900 text-zinc-100 flex items-center py-12 md:px-8 xl:px-20 animate-fade-in">
           <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
-            {/* Left Side */}
             <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
               <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
-                {/* Vertical Text */}
                 <div className="absolute -left-4 top-16 sm:left-16 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
                   <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
                   <p>All Skills</p>
                 </div>
 
-                {/* Main Heading */}
                 <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold ">
                   Explore My Expertise & Tech Stack
                 </h2>
@@ -50,7 +47,6 @@ const Skills: React.FC = () => {
                 experiences.
               </p>
 
-              {/* TODO: Add Tools/Skills Logic */}
               {/* <div className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
                 <button className="rounded-lg px-4 py-2 bg-orange-500 text-white transition-all duration-300 hover:bg-orange-600">
                   Skills
@@ -65,7 +61,6 @@ const Skills: React.FC = () => {
             {/* Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE */}
             <div className="w-full md:w-1/2 flex justify-center items-center">
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-                {/* Static Icons */}
                 <IconWithLabel name="HTML5">
                   <HtmlIcon />
                 </IconWithLabel>
