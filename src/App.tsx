@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home";
 import Skills from "./routes/Skills";
-import AboutMe from "./routes/AboutMe";
+import MyJourney from "./routes/MyJourney";
 import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
+import ReachOut from "./routes/ReachOut";
 import RootLayout from "./routes/RootLayout";
 import ErrorPage from "./routes/ErrorPage";
 import Layout from "./components/Layout";
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Layout>
-              <AboutMe />
+              <MyJourney />
             </Layout>
           </>
         ),
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <Layout>
-              <Contact />
+              <ReachOut />
             </Layout>
           </>
         ),
