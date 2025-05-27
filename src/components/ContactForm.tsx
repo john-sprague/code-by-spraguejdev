@@ -55,7 +55,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
       className="space-y-6 pt-12 w-full animate-fade-in"
     >
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-zinc-300">
+        <label
+          htmlFor="name"
+          className="block text-sm font-medium text-zinc-300"
+        >
           Name
         </label>
         <input
@@ -70,7 +73,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-zinc-300">
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-zinc-300"
+        >
           Email
         </label>
         <input
@@ -85,7 +91,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-zinc-300">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-zinc-300"
+        >
           Message
         </label>
         <textarea
