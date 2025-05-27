@@ -55,7 +55,7 @@ const Home: React.FC = () => {
             with creative problem solving and making a difference in the world through tech. Now, as a Senior
             Software Engineer with a proven track record at IBM, I focus on{" "}
             <strong>
-              full-stack development, UX design, Scalability, and system performance.
+              Full-Stack Engineering, UX design, Scalability, and System Performance.
             </strong>
             <br />
             <br />
