@@ -1,7 +1,7 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface IconProps {
-  children: any;
+  children: ReactNode;
   name: string; 
 }
 

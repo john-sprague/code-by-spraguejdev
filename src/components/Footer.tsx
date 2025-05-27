@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "./ScrollToTopButton";
-import { NavItems } from "./MainNavigation";
+import { NavItems } from "../lib/constants";
 
 const Footer: React.FC = () => {
   return (

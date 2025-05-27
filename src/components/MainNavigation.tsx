@@ -1,16 +1,5 @@
 import { Link } from "react-router-dom";
-interface NavItem {
-  pageName: string;
-  pagePath: string;
-}
-
-export const NavItems: NavItem[] = [
-  { pageName: "Home", pagePath: "/" },
-  { pageName: "Skills", pagePath: "/skills" },
-  { pageName: "About Me", pagePath: "/about-me" },
-  { pageName: "Projects", pagePath: "/projects" },
-  { pageName: "Contact Me", pagePath: "/contact-me" },
-];
+import { NavItems } from "../lib/constants";
 
 const MainNavigation = () => {
   return (
