@@ -3,7 +3,7 @@ import React from "react";
 interface TitleSectionProps {
   title: string;
   subtitle: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const TitleSection: React.FC<TitleSectionProps> = ({
