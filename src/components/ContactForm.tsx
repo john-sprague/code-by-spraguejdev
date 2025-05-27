@@ -1,7 +1,7 @@
-// components/ContactForm.tsx
 import { useRef, useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
+import { Loader2 } from "lucide-react";
 
 interface FormData {
   name: string;
@@ -21,6 +21,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef<HTMLFormElement | null>(null);
 
   const handleChange = (
@@ -30,9 +31,25 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const isValidEmail = (email: string) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!form.current) return;
+
+    if (!formData.name || !formData.email || !formData.message) {
+      onError("Please fill out all fields.");
+      return;
+    }
+
+    if (!isValidEmail(formData.email)) {
+      onError("Please enter a valid email address.");
+      return;
+    }
+
+    setIsSubmitting(true);
 
     emailjs
       .sendForm("service_lrbv74w", "template_gcsheil", form.current, {
@@ -45,6 +62,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
       .catch((error) => {
         console.error("FAILED...", error.text);
         onError("Something went wrong. Please try again later.");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   };
 
@@ -108,8 +128,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) => {
         />
       </div>
 
-      <Button variant="gradient" size="lg">
-        Reach Out
+      <Button variant="gradient" size="lg" disabled={isSubmitting}>
+        {isSubmitting ? (
+          <span className="flex items-center gap-2">
+            <Loader2 className="animate-spin h-5 w-5" /> Sending...
+          </span>
+        ) : (
+          "Reach Out"
+        )}
       </Button>
     </form>
   );
