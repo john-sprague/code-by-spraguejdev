@@ -2,10 +2,11 @@ import { useState } from "react";
 import TitleSection from "../components/TitleSection";
 import ContactCards from "../components/ContactCards";
 import ContactForm from "../components/ContactForm";
+import Toast, { ToastType } from "../components/Toast";
 
 const ReachOut: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-  const [toastType, setToastType] = useState<"success" | "error" | null>(null);
+  const [toastType, setToastType] = useState<ToastType | null>(null);
 
   const handleSuccess = (message: string) => {
     setToastMessage(message);
@@ -27,16 +28,15 @@ const ReachOut: React.FC = () => {
 
   return (
     <div className="relative pb-16">
-      {toastMessage && (
-        <div
-          className={`fixed top-5 right-5 z-50 px-6 py-4 rounded-lg shadow-lg transition-all duration-300 ${
-            toastType === "success"
-              ? "bg-green-500 text-white"
-              : "bg-red-500 text-white"
-          }`}
-        >
-          {toastMessage}
-        </div>
+      {toastMessage && toastType && (
+        <Toast
+          message={toastMessage}
+          type={toastType}
+          onClose={() => {
+            setToastMessage(null);
+            setToastType(null);
+          }}
+        />
       )}
 
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16">
