@@ -5,7 +5,7 @@ interface SectionProps {
   subtitle: string;
   verticalLineText: string;
   children?: React.ReactNode;
-  isDarkMode?: Boolean;
+  isDarkMode?: boolean;
 }
 
 const Section: React.FC<SectionProps> = ({
