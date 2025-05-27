@@ -8,7 +8,7 @@ interface FormData {
   message: string;
 }
 
-const Contact: React.FC = () => {
+const ReachOut: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -113,4 +113,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ReachOut;

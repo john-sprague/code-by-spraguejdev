@@ -6,7 +6,7 @@ interface NavItem {
 export const NavItems: NavItem[] = [
   { pageName: "Home", pagePath: "/" },
   { pageName: "Skills", pagePath: "/skills" },
-  { pageName: "About Me", pagePath: "/about-me" },
+  { pageName: "My Journey", pagePath: "/my-journey" },
   { pageName: "Projects", pagePath: "/projects" },
-  { pageName: "Contact Me", pagePath: "/contact" },
+  { pageName: "Get In Touch", pagePath: "/get-in-touch" },
 ];

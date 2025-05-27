@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/about-me",
+        path: "/my-journey",
         element: (
           <>
             <Layout>
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/contact",
+        path: "/get-in-touch",
         element: (
           <>
             <Layout>

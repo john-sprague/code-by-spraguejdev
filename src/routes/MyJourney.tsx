@@ -1,7 +1,7 @@
 import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
 
-const AboutMe: React.FC = () => {
+const MyJourney: React.FC = () => {
   return (
     <div className="relative pb-16">
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 ">
@@ -184,4 +184,4 @@ const AboutMe: React.FC = () => {
   );
 };
 
-export default AboutMe;
+export default MyJourney;
