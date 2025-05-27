@@ -11,6 +11,7 @@ import HTML5Icon from "../assets/icons/html5.svg";
 import Button from "../components/Button";
 import Avatar from "../components/Avatar.tsx";
 import profilePic from "../../public/images/my_avatar_image.jpg";
+import { NavItems } from "../lib/constants.tsx";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -88,9 +89,9 @@ const Home: React.FC = () => {
           <Button
             variant="secondary"
             className="px-8 py-3 text-lg font-semibold text-white"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate(NavItems[4].pagePath)}
           >
-            Contact Me
+            Get In Touch
           </Button>
         </div>
       </div>
