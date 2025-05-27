@@ -57,7 +57,6 @@ const Skills: React.FC = () => {
               </div> */}
             </div>
 
-            {/* Right Side (Static Icons Grid) */}
             {/* Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE */}
             <div className="w-full md:w-1/2 flex justify-center items-center">
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
