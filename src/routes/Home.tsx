@@ -120,16 +120,16 @@ const Home: React.FC = () => {
           <Button
             variant="default"
             className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate(NavItems[3].pagePath)}
           >
-            View Projects
+            View {NavItems[3].pageName}
           </Button>
           <Button
             variant="secondary"
             className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
             onClick={() => navigate(NavItems[1].pagePath)}
           >
-            View Skills
+            View {NavItems[1].pageName}
           </Button>
         </div>
         <div className="w-full h-px bg-zinc-300/50 my-6 animate-fade-in " />

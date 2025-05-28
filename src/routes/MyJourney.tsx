@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
-
+import Button from "../components/Button";
+import { NavItems } from "../lib/constants";
 const MyJourney: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative pb-16">
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 ">
@@ -179,6 +183,23 @@ const MyJourney: React.FC = () => {
             <li>Scalability, performance, and sustainability</li>
           </ul>
         </Section>
+
+        <div className="mx-8 flex justify-center gap-6 animate-fade-in pt-10 pb-10">
+          <Button
+            variant="default"
+            className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
+            onClick={() => navigate(NavItems[3].pagePath)}
+          >
+            View {NavItems[3].pageName}
+          </Button>
+          <Button
+            variant="secondary"
+            className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
+            onClick={() => navigate(NavItems[4].pagePath)}
+          >
+            {NavItems[4].pageName}
+          </Button>
+        </div>
       </div>
     </div>
   );

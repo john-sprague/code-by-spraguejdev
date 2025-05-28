@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import TitleSection from "../components/TitleSection";
 import IconWithLabel from "../components/IconWithLabel";
 import ReactIcon from "../assets/icons/react.svg";
@@ -16,8 +17,12 @@ import TypeScriptIcon from "../assets/icons/typescript.svg"
 import NodeJsIcon from "../assets/icons/nodejs.svg"
 import MongoDbIcon from "../assets/icons/mongo.svg"
 import ExpressJsIcon from "../assets/icons/express.svg"
+import Button from "../components/Button";
+import { NavItems } from "../lib/constants";
 
 const Skills: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative pb-16">
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16">
@@ -125,8 +130,26 @@ const Skills: React.FC = () => {
                 </IconWithLabel>
               </div>
             </div>
+            
           </div>
         </section>
+
+        <div className="mx-8 flex justify-center gap-6 animate-fade-in pt-10 pb-10">
+          <Button
+            variant="default"
+            className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
+            onClick={() => navigate(NavItems[3].pagePath)}
+          >
+            View {NavItems[3].pageName}
+          </Button>
+          <Button
+            variant="secondary"
+            className="px-8 py-3 text-lg font-semibold text-zinc-50 min-w-40"
+            onClick={() => navigate(NavItems[2].pagePath)}
+          >
+            View {NavItems[2].pageName}
+          </Button>
+        </div>
       </div>
     </div>
   );
