@@ -3,8 +3,14 @@ import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
 import Button from "../components/Button";
 import { NavItems } from "../lib/constants";
-import Avatar from "../components/Avatar";
-import StormyPic from "../../public/images/stormy.jpg"
+import StormyImage from "../../public/images/stormy.jpg";
+import ComputerDeskImage from "../../public/images/computer-desk-coding.jpg";
+import SystemsImage from "../../public/images/interconnected.jpg";
+import FarmerJohnCarrotImage from "../../public/images/farmer-john-carrot.jpg";
+import GloriousGreensLogo from "../../public/images/glorous-greens-logo.png";
+import TheSpragueFamilyImage from "../../public/images/the-sprague-family.jpeg";
+import FarmerJohnImage from "../../public/images/farmer-john.jpg";
+import AgArtTourImage from "../../public/images/ag+art-tour.jpg"; 
 
 const MyJourney: React.FC = () => {
   const navigate = useNavigate();
@@ -25,6 +31,8 @@ const MyJourney: React.FC = () => {
           verticalLineText="Passionate"
           isSingleColumn={true}
           isDarkMode={true}
+          imageSrc={TheSpragueFamilyImage}
+          imageAlt='The Sprague Family Chapin Magazine'
         >
           <p className="mb-6 text-lg text-zinc-200 pt-16">
             A <strong>full-stack engineer, systems thinker</strong>, and
@@ -106,9 +114,9 @@ const MyJourney: React.FC = () => {
           title="Rebooted"
           subtitle="To build something that makes people’s lives better"
           verticalLineText="Builder"
-          isSingleColumn={true}
-          isDarkMode={false}
-          alignTitle="right"
+          isDarkMode={true}
+          imageSrc={GloriousGreensLogo}
+          imageAlt='Glorious Greens farm logo'
         >
           <p className="mb-6 text-lg text-zinc-200 pt-10">
             Most recently, I took an 18-month leap into sustainable agriculture,
@@ -147,6 +155,8 @@ const MyJourney: React.FC = () => {
           subtitle="My career journey has brought me from engineering scalable systems to optimizing agricultural workflows."
           verticalLineText="Tech Transition"
           isDarkMode={false}
+          imageSrc={FarmerJohnCarrotImage}
+          imageAlt='Farmer John biting a fresh carrot in the high tunnel'
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
             <li>
@@ -177,6 +187,8 @@ const MyJourney: React.FC = () => {
           subtitle="I’ve built repeatable systems that blend engineering with resourceful problem solving."
           verticalLineText="New Skills"
           isDarkMode={true}
+          imageSrc={AgArtTourImage}
+          imageAlt={"Farmer John teaching guests about farming systems"}
         >
           <ul className="list-disc pl-5 text-lg text-zinc-200 space-y-2">
             <li>
@@ -211,6 +223,8 @@ const MyJourney: React.FC = () => {
           subtitle="The skills I developed in farming and operations directly translate to software engineering."
           verticalLineText="Transferable"
           isDarkMode={false}
+          imageSrc={FarmerJohnImage}
+          imageAlt="Farming John standing on the farm field next to high tunnel"
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200 ">
             <li>
@@ -238,6 +252,8 @@ const MyJourney: React.FC = () => {
           subtitle="I bring a unique edge to software development with systems thinking, real-world grit, and empathy."
           verticalLineText="The Comeback"
           isDarkMode={true}
+          imageSrc={SystemsImage}
+          imageAlt={'technology connected image'}
         >
           <ul className="list-disc list-inside space-y-2 text-lg text-zinc-200">
             <li>
@@ -264,6 +280,8 @@ const MyJourney: React.FC = () => {
           subtitle="Currently, I’m tackling challenges that push the limits of full stack engineering and product scalability."
           verticalLineText="Mission Focused"
           isDarkMode={false}
+          imageSrc={ComputerDeskImage}
+          imageAlt="Computer desk mac book with vs code on screen"
         >
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-200">
             <li>Javascript, Typescript, Node.js</li>
@@ -279,6 +297,8 @@ const MyJourney: React.FC = () => {
           subtitle="I stay active outdoors, active in the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
           verticalLineText="Community"
           isDarkMode={true}
+          imageSrc={StormyImage}
+          imageAlt="John's German Shepard Dog named Stormy in a farm field"
         >
           <p className="mb-6 text-lg text-zinc-200">
             I'm building a community of like minded individuals who take
@@ -299,13 +319,13 @@ const MyJourney: React.FC = () => {
             </a>
             .
           </p>
-          <Avatar
-              src={StormyPic}
+          {/* <Avatar
+              src={StormyImage}
               alt="John Sprague"
               size={400}
               scaleOnHover={true}
               className="shadow-lg"
-            />
+            /> */}
         </Section>
 
         <div className="mx-8 flex justify-center gap-6 animate-fade-in pt-10 pb-10">
