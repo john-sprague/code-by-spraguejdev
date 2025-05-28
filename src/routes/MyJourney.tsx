@@ -16,7 +16,7 @@ const MyJourney: React.FC = () => {
         />
         <Section
           title="When I’m Not Coding..."
-          subtitle="I stay active outdoors, withing the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
+          subtitle="I stay active outdoors, active in the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
           verticalLineText="Community"
           isDarkMode={false}
         >
