@@ -14,51 +14,138 @@ const MyJourney: React.FC = () => {
           subtitle="Developer. Builder. Systems Thinker"
           children={undefined}
         />
-        <Section
-          title="When I’m Not Coding..."
-          subtitle="I stay active outdoors, active in the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
-          verticalLineText="Community"
-          isDarkMode={false}
-        >
-          <p className="mb-6 text-lg text-zinc-400">
-            I'm building a community of like minded individuals who take responsibility seriously. I gravitate toward people who are actively growing and 
-            not chasing shortcuts. They read, train, reflect, build. Whether it's in their career, relationships, self-growth, they're playing the long game. 
-            <br/><br/>
-            I value consistency, shared effort, and mutual growth. 
-            <br/><br/>
-            Personally, you can find me training for endurance events, walking my German Shepherd{" "}
-            <span className="font-semibold">Stormy</span> 🐾, or sharing
-            reflections and lessons in my storytelling series:{" "}
-            <a href="#" className="text-green-700 underline font-semibold">
-              Roots & Reboots
-            </a>
-            .
-          </p>
-        </Section>
 
         <Section
-          title="The Journey, Not The Destination"
-          subtitle="Now building with clarity, purpose, and calloused hands"
-          verticalLineText="The Journey"
+          title="My Journey"
+          subtitle="I design clean code, scalable systems,
+            and tools that actually help people"
+          verticalLineText="Passionate"
+          isSingleColumn={true}
           isDarkMode={true}
         >
-          <p className="text-lg text-zinc-400 space-y-2">
-            Hey — I’m <span className="font-semibold">John Sprague</span>, a
-            full-stack software engineer with a passion for building systems
-            that serve real people. My path’s been unconventional: I left tech
-            two in 2023 to build and run a regenerative farm and sourdough
-            bakery from the ground up, and that journey reshaped how I think
-            about growth, structure, and what matters.
+          <p className="mb-6 text-lg text-zinc-200 pt-16">
+            A <strong>full-stack engineer, systems thinker</strong>, and
+            lifelong builder-in-progress. I design clean code, scalable systems,
+            and tools that actually help people, guided by a mindset rooted in
+            clarity, growth, and continuous learning.
+          </p>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            My journey started in college, building websites for local
+            businesses while studying Information Systems. That’s where I fell
+            in love with creative problem solving and saw firsthand how
+            technology can genuinely improve people’s lives. That belief—that
+            tech can scale the impact of helping others—has guided me ever
+            since.
+          </p>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Before diving into entrepreneurship, I spent 5+ years at{" "}
+            <strong>IBM</strong> as a Front-End, Full-Stack, and Cloud Engineer,
+            where I led impactful projects like:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
+            <li>
+              Designing and launching{" "}
+              <strong>IBM’s first usage-based metering platform</strong>,
+              streamlining hybrid cloud billing and onboarding 60+ enterprise
+              products, earning an
+              <em>Outstanding Technical Achievement Award</em>.
+            </li>
+            <li>
+              Managing a <strong>UX component library</strong> used by 40+
+              engineers daily, saving an estimated
+              <strong>40+ dev hours weekly</strong>.
+            </li>
+            <li>
+              Leading a{" "}
+              <strong>globally distributed team of 6 engineers</strong>,
+              bridging user experience and business value, roadmapping features,
+              and ensuring delivery at scale.
+            </li>
+          </ul>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Most recently, I took an 18-month leap into sustainable agriculture,
+            launching a community-focused venture that connected people directly
+            to the source of their food and highlighted the value of local,
+            ethical farming. It sharpened my leadership, product thinking, and
+            deepened my appreciation for systems— biological <em>and</em>{" "}
+            digital—that serve people well.
+          </p>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Now rebooted with purpose, I’m looking to grow in environments where
+            I can:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
+            <li>
+              <strong>Scale meaningful technology</strong>
+            </li>
+            <li>
+              Work across{" "}
+              <strong>distributed systems and cloud infrastructure</strong>
+            </li>
+            <li>
+              Create <strong>delightful user experiences</strong> that make life
+              better for real people
+            </li>
+          </ul>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Let’s build something that matters.
           </p>
         </Section>
 
         <Section
-          title="From Cloud Architecture to Crop Rotation"
+          title="Rebooted"
+          subtitle="To build something that makes people’s lives better"
+          verticalLineText="Builder"
+          isSingleColumn={true}
+          isDarkMode={false}
+          alignTitle="right"
+        >
+          <p className="mb-6 text-lg text-zinc-200 pt-10">
+            Most recently, I took an 18-month leap into sustainable agriculture,
+            launching a community-focused venture that connected people directly
+            to the source of their food and highlighted the value of local,
+            sustainable farming. It sharpened my leadership, mission, and
+            deepened my appreciation for solving problems when the unexpected happen.
+          </p>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Now rebooted with purpose, I’m looking to grow in environments where
+            I can:
+          </p>
+
+          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
+            <li>
+              <strong>Scale meaningful technology</strong>
+            </li>
+            <li>
+              Work across{" "}
+              <strong>distributed systems and cloud infrastructure</strong>
+            </li>
+            <li>
+              Create <strong>delightful user experiences</strong> that make life
+              better for real people
+            </li>
+          </ul>
+
+          <p className="mb-6 text-lg text-zinc-200">
+            Let’s build something that matters.
+          </p>
+        </Section>
+
+        <Section
+          title="From Cloud Development to Crop Rotation"
           subtitle="My career journey has brought me from engineering scalable systems to optimizing agricultural workflows."
           verticalLineText="Tech Transition"
           isDarkMode={false}
         >
-          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-400">
+          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
             <li>
               Ranked #1 for target keywords by leveraging backlinks, blog
               content, and SEO optimization techniques.
@@ -88,7 +175,7 @@ const MyJourney: React.FC = () => {
           verticalLineText="New Skills"
           isDarkMode={true}
         >
-          <ul className="list-disc pl-5 text-lg text-zinc-400 space-y-2">
+          <ul className="list-disc pl-5 text-lg text-zinc-200 space-y-2">
             <li>
               <strong>Operations Systems Design:</strong> Applied agile and lean
               principles to physical workflow optimization, from crop rotation
@@ -122,7 +209,7 @@ const MyJourney: React.FC = () => {
           verticalLineText="Transferable"
           isDarkMode={false}
         >
-          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-400 ">
+          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200 ">
             <li>
               Embracing challenges head-on and continuously learning from
               failures has been crucial in creating solutions that stand the
@@ -149,7 +236,7 @@ const MyJourney: React.FC = () => {
           verticalLineText="The Comeback"
           isDarkMode={true}
         >
-          <ul className="list-disc list-inside space-y-2 text-lg text-zinc-400">
+          <ul className="list-disc list-inside space-y-2 text-lg text-zinc-200">
             <li>
               <span className="font-semibold">Systems Thinking</span> honed in
               nature and engineering.
@@ -175,13 +262,40 @@ const MyJourney: React.FC = () => {
           verticalLineText="Mission Focused"
           isDarkMode={false}
         >
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-400">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-200">
             <li>Javascript, Typescript, Node.js</li>
             <li>Backend & Distributed Systems</li>
             <li>Purpose-driven Product Engineering</li>
             <li>Developer Experience & Team Collaboration</li>
             <li>Scalability, performance, and sustainability</li>
           </ul>
+        </Section>
+
+        <Section
+          title="When I’m Not Coding..."
+          subtitle="I stay active outdoors, active in the community, train for endurance events, and love spending time with my German Shepherd, Stormy."
+          verticalLineText="Community"
+          isDarkMode={true}
+        >
+          <p className="mb-6 text-lg text-zinc-200">
+            I'm building a community of like minded individuals who take
+            responsibility seriously. I gravitate toward people who are actively
+            growing and not chasing shortcuts. They read, train, reflect, build.
+            Whether it's in their career, relationships, self-growth, they're
+            playing the long game.
+            <br />
+            <br />
+            I value consistency, shared effort, and mutual growth.
+            <br />
+            <br />
+            Personally, you can find me training for endurance events, walking
+            my German Shepherd <span className="font-semibold">Stormy</span> 🐾,
+            or sharing reflections and lessons in my storytelling series:{" "}
+            <a href="#" className="text-green-700 underline font-semibold">
+              Roots & Reboots
+            </a>
+            .
+          </p>
         </Section>
 
         <div className="mx-8 flex justify-center gap-6 animate-fade-in pt-10 pb-10">
