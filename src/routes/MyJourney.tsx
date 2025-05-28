@@ -3,6 +3,9 @@ import Section from "../components/Section";
 import TitleSection from "../components/TitleSection";
 import Button from "../components/Button";
 import { NavItems } from "../lib/constants";
+import Avatar from "../components/Avatar";
+import StormyPic from "../../public/images/stormy.jpg"
+
 const MyJourney: React.FC = () => {
   const navigate = useNavigate();
 
@@ -296,6 +299,13 @@ const MyJourney: React.FC = () => {
             </a>
             .
           </p>
+          <Avatar
+              src={StormyPic}
+              alt="John Sprague"
+              size={400}
+              scaleOnHover={true}
+              className="shadow-lg"
+            />
         </Section>
 
         <div className="mx-8 flex justify-center gap-6 animate-fade-in pt-10 pb-10">
