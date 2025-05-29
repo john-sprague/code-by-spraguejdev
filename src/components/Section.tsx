@@ -1,5 +1,5 @@
 import React from "react";
-
+//TODO: Is the component doing too much? 
 interface SectionProps {
   title: string;
   subtitle: string;
