@@ -59,7 +59,7 @@ const Home: React.FC = () => {
           <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-blue-600 animate-title-landing sm:text-6xl md:text-9xl md:min-h-36">
             John Sprague
           </h1>
-          <h2 className="text-2xl text-zinc-200 mt-4 animate-title-landing">
+          <h2 className="text-2xl text-zinc-200 mt-4 pt-4 animate-title-landing">
             Full-Stack Engineer and Builder of Useful Things
           </h2>
 
