@@ -32,7 +32,7 @@ const MainNavigation: React.FC = () => {
           {isOpen ? (
             <X className="w-6 h-6" />
           ) : (
-            <Menu className="w-6 h-6" />
+            <Menu className="w-12 h-12" />
           )}
         </button>
       </div>
