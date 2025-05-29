@@ -144,7 +144,7 @@ const Home: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-2 rounded-2xl bg-zinc-900/80 p-6 border border-zinc-700 shadow-xl backdrop-blur-md">
+            <div className="lg:col-span-2 rounded-2xl bg-zinc-900/80 p-6 border border-zinc-700 shadow-xl backdrop-blur">
               <ContactForm onSuccess={handleSuccess} onError={handleError} />
             </div>
             <div className="space-y-6 backdrop-blur-md">
