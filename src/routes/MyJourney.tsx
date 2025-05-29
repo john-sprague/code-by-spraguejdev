@@ -76,38 +76,6 @@ const MyJourney: React.FC = () => {
               and ensuring delivery at scale.
             </li>
           </ul>
-
-          <p className="mb-6 text-lg text-zinc-200">
-            Most recently, I took an 18-month leap into sustainable agriculture,
-            launching a community-focused venture that connected people directly
-            to the source of their food and highlighted the value of local,
-            ethical farming. It sharpened my leadership, product thinking, and
-            deepened my appreciation for systems— biological <em>and</em>{" "}
-            digital—that serve people well.
-          </p>
-
-          <p className="mb-6 text-lg text-zinc-200">
-            Now rebooted with purpose, I’m looking to grow in environments where
-            I can:
-          </p>
-
-          <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
-            <li>
-              <strong>Scale meaningful technology</strong>
-            </li>
-            <li>
-              Work across{" "}
-              <strong>distributed systems and cloud infrastructure</strong>
-            </li>
-            <li>
-              Create <strong>delightful user experiences</strong> that make life
-              better for real people
-            </li>
-          </ul>
-
-          <p className="mb-6 text-lg text-zinc-200">
-            Let’s build something that matters.
-          </p>
         </Section>
 
         <Section
