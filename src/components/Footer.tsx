@@ -8,29 +8,30 @@ const Footer: React.FC = () => {
     <footer className="bg-zinc-900 text-zinc-100 py-12 animate-fade-in relative">
       <ScrollToTopButton />
 
-      <div className="px-6 mx-auto max-w-7xl mt-6 ">
+      <div className="px-6 mx-auto max-w-7xl mt-6">
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
           <div className="text-2xl font-bold text-center sm:text-left">
-            <Link to="/" className="hover:text-purple-600">
+            <Link to="/" className="hover:text-orange-600">
               John Sprague
             </Link>
           </div>
 
-          <div className="flex space-x-8 justify-center sm:justify-start">
-            {NavItems.map(navItem => (
-              <Link
-              to={navItem.pagePath}
-              className="text-lg text-zinc-200 hover:text-zinc-50 hover:scale-110 transition duration-100"
-            >
-              {navItem.pageName}
-            </Link>
+          <ul className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-8 sm:space-y-0 sm:justify-start">
+            {NavItems.map((navItem) => (
+              <li key={navItem.pagePath}>
+                <Link
+                  to={navItem.pagePath}
+                  className="text-lg text-zinc-200 hover:text-zinc-50 hover:scale-110 transition duration-100"
+                >
+                  {navItem.pageName}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         <div className="mt-8 border-t border-zinc-300/50 pt-6 text-center">
-        {/* TODO: Keep things DRY */}
-          <div className="flex justify-center space-x-6 mb-4">
+          <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0 mb-4">
             <a
               href="https://linkedin.com/in/spraguejdev"
               target="_blank"
@@ -64,6 +65,7 @@ const Footer: React.FC = () => {
               Twitter
             </a>
           </div>
+
           <p className="text-sm text-zinc-400">
             &copy; {new Date().getFullYear()} John Sprague. All rights reserved.
           </p>
