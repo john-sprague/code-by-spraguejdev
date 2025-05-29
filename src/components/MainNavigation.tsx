@@ -1,23 +1,59 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import { NavItems } from "../lib/constants";
 
-const MainNavigation = () => {
+const MainNavigation: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header>
-      <nav className="my-16 animate-bounce">
-        <ul className="flex items-center justify-center gap-5">
-          {NavItems.map((navItem) => (
-            <li className="hover:scale-105">
+    <header className="relative z-50 bg-zinc-900">
+      <nav className="hidden md:flex justify-center py-6">
+        <ul className="flex items-center space-x-8">
+          {NavItems.map((item) => (
+            <li key={item.pagePath}>
               <Link
-                to={navItem.pagePath}
-                className="text-md duration-500 text-zinc-200 hover:text-zinc-50 text-lg hover:scale-110"
+                to={item.pagePath}
+                className="text-lg text-zinc-200 hover:text-zinc-50 transition"
               >
-                {navItem.pageName}
+                {item.pageName}
               </Link>
             </li>
           ))}
         </ul>
       </nav>
+
+      <div className="md:hidden flex justify-end px-6 py-4">
+        <button
+          onClick={() => setIsOpen((o) => !o)}
+          className="text-zinc-200 hover:text-zinc-50"
+          aria-label="Toggle navigation"
+        >
+          {isOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
+        </button>
+      </div>
+
+      {isOpen && (
+        <nav className="md:hidden bg-zinc-900">
+          <ul className="flex flex-col items-center space-y-4 py-6">
+            {NavItems.map((item) => (
+              <li key={item.pagePath}>
+                <Link
+                  to={item.pagePath}
+                  className="text-lg text-zinc-200 hover:text-zinc-50 transition"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.pageName}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
