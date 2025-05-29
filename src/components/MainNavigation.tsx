@@ -7,7 +7,7 @@ const MainNavigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="relative z-50 bg-zinc-900">
+    <header className="relative z-50 ">
       <nav className="hidden md:flex justify-center py-6">
         <ul className="flex items-center space-x-8">
           {NavItems.map((item) => (
@@ -38,7 +38,7 @@ const MainNavigation: React.FC = () => {
       </div>
 
       {isOpen && (
-        <nav className="md:hidden bg-zinc-900">
+        <nav className="md:hidden">
           <ul className="flex flex-col items-center space-y-4 py-6">
             {NavItems.map((item) => (
               <li key={item.pagePath}>
