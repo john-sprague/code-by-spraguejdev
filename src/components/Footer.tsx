@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className="bg-zinc-900 text-zinc-100 py-12 animate-fade-in relative">
       <ScrollToTopButton />
 
-      <div className="px-6 mx-auto max-w-7xl">
+      <div className="px-6 mx-auto max-w-7xl mt-6 ">
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
           <div className="text-2xl font-bold text-center sm:text-left">
             <Link to="/" className="hover:text-purple-600">
