@@ -30,14 +30,12 @@ const iconsList: IconItem[] = [
   { iconName: "CSS3", icon: <CssIcon /> },
   { iconName: "JavaScript", icon: <JavascriptIcon /> },
   { iconName: "React.js", icon: <ReactIcon /> },
-  // …and **this**:
   { iconName: "GraphQL", icon: <GraphQlIcon /> },
   { iconName: "Redux", icon: <ReduxIcon /> },
   { iconName: "TypeScript", icon: <TypeScriptIcon /> },
   { iconName: "Node.js", icon: <NodeJsIcon /> },
   { iconName: "ExpressJS", icon: <ExpressJsIcon /> },
   { iconName: "TailwindCSS", icon: <TailwindIcon /> },
-  // …and **this**:
   { iconName: "AWS", icon: <AwsIcon /> },
   { iconName: "MySQL", icon: <MySqlIcon /> },
   { iconName: "MongoDB", icon: <MongoDbIcon /> },
