@@ -1,6 +1,6 @@
 # **John Sprague - Portfolio**
 
-Welcome to my personal portfolio! This repository showcases my skills, projects, and development journey as a **Full Stack Software Engineer**. I'm passionate about creating scalable, performant applications, and I specialize in **React, React Native, Node.js, and cloud technologies**. Here, you’ll find a collection of my work, from personal projects to professional achievements.
+Welcome to my personal portfolio! This repository showcases my skills, projects, and development journey as a **Full Stack Software Engineer**. I'm passionate about creating scalable, performant applications, and I specialize in **React, React Native, Node.js, performant and distributed sytems, and cloud technologies**. Here, you’ll find a collection of my work, from personal projects to professional achievements.
 
 Check out my portfolio website: [spraguejdev.com](https://spraguejdev.com)
 
@@ -18,10 +18,7 @@ I'm John Sprague, a software engineer with a deep interest in **building solutio
 - **Version Control:** Git, GitHub, GitLab
 
 ### **Projects**
-Below is a list of my notable projects:
-
-1. **[Project 1 Name](#)** - Description of project and technologies used.
-2. **[Project 2 Name](#)** - Description of project and technologies used.
+Check out my projects page for a list of my notable projects:
 
 ### **Connect With Me**
 Feel free to reach out if you want to collaborate on a project, or just want to talk tech!
