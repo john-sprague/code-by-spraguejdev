@@ -49,7 +49,7 @@ const Section: React.FC<SectionProps> = ({
           >
 
             <div
-              className="absolute -left-4 sm:left-16 sm:top-24 md:-left-12 xl:-left-16 top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2"
+              className={`absolute ${isDarkMode ? `-left-4` : `-left-8`} sm:left-16 sm:top-24 md:-left-12 xl:-left-16 top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2`}
             >
               <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
               <p>{verticalLineText}</p>

@@ -251,7 +251,7 @@ const MyJourney: React.FC = () => {
           imageSrc={ComputerDeskImage}
           imageAlt="Computer desk mac book with vs code on screen"
         >
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-200">
+          <ul className="list-disc grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-zinc-200">
             <li>Javascript, Typescript, Node.js</li>
             <li>Backend & Distributed Systems</li>
             <li>Purpose-driven Product Engineering</li>
