@@ -13,12 +13,38 @@ import TailwindIcon from "../assets/icons/tailwind.svg";
 import JavascriptIcon from "../assets/icons/javascript.svg";
 import CssIcon from "../assets/icons/css.svg";
 import HtmlIcon from "../assets/icons/html5.svg";
-import TypeScriptIcon from "../assets/icons/typescript.svg"
-import NodeJsIcon from "../assets/icons/nodejs.svg"
-import MongoDbIcon from "../assets/icons/mongo.svg"
-import ExpressJsIcon from "../assets/icons/express.svg"
+import TypeScriptIcon from "../assets/icons/typescript.svg";
+import NodeJsIcon from "../assets/icons/nodejs.svg";
+import MongoDbIcon from "../assets/icons/mongo.svg";
+import ExpressJsIcon from "../assets/icons/express.svg";
 import Button from "../components/Button";
 import { NavItems } from "../lib/constants";
+
+interface IconItem {
+  iconName: string;
+  icon: React.ReactNode;
+}
+
+const iconsList: IconItem[] = [
+  { iconName: "HTML5", icon: <HtmlIcon /> },
+  { iconName: "CSS3", icon: <CssIcon /> },
+  { iconName: "JavaScript", icon: <JavascriptIcon /> },
+  { iconName: "React.js", icon: <ReactIcon /> },
+  // …and **this**:
+  { iconName: "GraphQL", icon: <GraphQlIcon /> },
+  { iconName: "Redux", icon: <ReduxIcon /> },
+  { iconName: "TypeScript", icon: <TypeScriptIcon /> },
+  { iconName: "Node.js", icon: <NodeJsIcon /> },
+  { iconName: "ExpressJS", icon: <ExpressJsIcon /> },
+  { iconName: "TailwindCSS", icon: <TailwindIcon /> },
+  // …and **this**:
+  { iconName: "AWS", icon: <AwsIcon /> },
+  { iconName: "MySQL", icon: <MySqlIcon /> },
+  { iconName: "MongoDB", icon: <MongoDbIcon /> },
+  { iconName: "Python", icon: <PythonIcon /> },
+  { iconName: "Git", icon: <GitIcon /> },
+  { iconName: "Figma", icon: <FigmaIcon /> },
+];
 
 const Skills: React.FC = () => {
   const navigate = useNavigate();
@@ -47,8 +73,9 @@ const Skills: React.FC = () => {
 
               <p className="p-3 space-y-2 text-zinc-400 text-lg leading-relaxed">
                 These are the tools and technologies that I use daily to develop
-                web applications. With a strong foundation in the JavaScript.js ecosystem, I focus
-                on delivering clean, scalable, maintainable code and intuitive user
+                web applications. With a strong foundation in the JavaScript.js
+                ecosystem, scalable and distributed systems, and I focus on
+                delivering clean, scalable, maintainable code and intuitive user
                 experiences.
               </p>
 
@@ -62,75 +89,15 @@ const Skills: React.FC = () => {
               </div> */}
             </div>
 
-            {/* Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE */}
             <div className="w-full md:w-1/2 flex justify-center items-center">
               <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-                <IconWithLabel name="HTML5">
-                  <HtmlIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="CSS3">
-                  <CssIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="JavaScript">
-                  <JavascriptIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="ReactJS">
-                  <ReactIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="GraphQL">
-                  <GraphQlIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="Redux">
-                  <ReduxIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="TypeScript">
-                  <TypeScriptIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="Node.js">
-                  <NodeJsIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="ExpressJS">
-                  <ExpressJsIcon />
-                </IconWithLabel>
-                
-                <IconWithLabel name="TailwindCSS">
-                  <TailwindIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="AWS">
-                  <AwsIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="MySQL">
-                  <MySqlIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="MongoDB">
-                  <MongoDbIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="Python">
-                  <PythonIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="Git">
-                  <GitIcon />
-                </IconWithLabel>
-
-                <IconWithLabel name="Figma">
-                  <FigmaIcon />
-                </IconWithLabel>
+                {iconsList.map((item) => (
+                  <IconWithLabel key={item.iconName} name={item.iconName}>
+                    {item.icon}
+                  </IconWithLabel>
+                ))}
               </div>
             </div>
-            
           </div>
         </section>
 
