@@ -7,7 +7,7 @@ import StormyImage from "../../public/images/stormy.jpg";
 import ComputerDeskImage from "../../public/images/computer-desk-coding.jpg";
 import SystemsImage from "../../public/images/interconnected.jpg";
 import FarmerJohnCarrotImage from "../../public/images/farmer-john-carrot.jpg";
-import GloriousGreensLogo from "../../public/images/glorous-greens-logo.png";
+import GloriousGreensLogo from "../../public/images/glorious-greens-logo.png";
 import TheSpragueFamilyImage from "../../public/images/the-sprague-family.jpeg";
 import FarmerJohnImage from "../../public/images/farmer-john.jpg";
 import AgArtTourImage from "../../public/images/ag+art-tour.jpg"; 
