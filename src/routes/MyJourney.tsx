@@ -20,7 +20,7 @@ const MyJourney: React.FC = () => {
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 ">
         <TitleSection
           title="About Me"
-          subtitle="Developer. Builder. Systems Thinker"
+          subtitle="Developer. Builder. Systems Thinker. Learning Machine"
           children={undefined}
         />
 
@@ -128,6 +128,9 @@ const MyJourney: React.FC = () => {
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200">
             <li>
+              Built a community focused start up that served over 200+ families a week.  
+            </li>
+            <li>
               Ranked #1 for target keywords by leveraging backlinks, blog
               content, and SEO optimization techniques.
             </li>
@@ -188,11 +191,11 @@ const MyJourney: React.FC = () => {
 
         <Section
           title="Why It Matters in Tech"
-          subtitle="The skills I developed in farming and operations directly translate to software engineering."
+          subtitle="The skills I developed as a entrepreneur and operations directly translate to software engineering."
           verticalLineText="Transferable"
           isDarkMode={false}
           imageSrc={FarmerJohnImage}
-          imageAlt="Farming John standing on the farm field next to high tunnel"
+          imageAlt="Farmer John standing on the farm field next to high tunnel"
         >
           <ul className="list-disc pl-5 space-y-2 text-lg text-zinc-200 ">
             <li>
